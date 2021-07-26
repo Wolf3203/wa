@@ -33,4 +33,8 @@ app.get('/',(req,res)=>{
     res.render('index');
 })
 
+app.get('/add-book',(req,res)=>{
+    res.render('add_book');
+})
+
 app.listen(PORT,()=>{console.log('Server is running on http//localhost:'+PORT)})

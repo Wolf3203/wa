@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+
+</head>
+<body>
+    
+<!-- HEADER-->
+<header id = "header">  
+    <nav>
+        <div class = "container">
+            <div class = "text-center">
+                <a href = "/" class = "nav-brand text-dark">My Books Management System</a>
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- /HEADER-->
+
+<main id = "site-main">
+    <div class="container">
+        <div class = "box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/">  <i class="far fa-hand-point-left"></i> All Books</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">New Book</h2>
+            <span class="text-light"> Use the form bellow to add a new book</span>
+        </div>
+        
+        <!-- form handling-->
+        <form  method = "POST" id="update_book">
+            <div class="new_book">
+                <div class="form-group">
+                    <label for="title" class="text-light">Title</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="title" value="" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <label for="Author" class="text-light">Author</label>
+                    <input type="text" name="author" value="" placeholder="Author">
+                </div>
+                <div class="form-group">
+                    <label for="Genres" class="text-light">Genres</label>
+                    <input type="text" name="genres" value="" placeholder="Genres">
+                </div>
+                <div class="form-group">
+                    <label for="status" class="text-light">Status</label>
+                    <div class=" radio inline">
+                    <input type="radio" id="radio-2" name="status" value="Reading">
+                    <label for="radio-2" class="radio-label">Reading</label>
+                    </div>
+                    <div class=" radio inline">
+                    <input type="radio" id="radio-3" name="status" value="Finished">
+                    <label for="radio-3" class="radio-label">Finished</label>
+                     </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn text-dark update">Save</button>
+            </div>
+       
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

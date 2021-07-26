@@ -1,0 +1,35 @@
+
+
+ <form  method = "POST" id="update_book">
+    <div class="new_book">
+        <div class="form-group">
+            <label for="title" class="text-light">Title</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="title" value="" placeholder="Title">
+        </div>
+        <div class="form-group">
+            <label for="Author" class="text-light">Author</label>
+            <input type="text" name="author" value="" placeholder="Author">
+        </div>
+        <div class="form-group">
+            <label for="Genres" class="text-light">Genres</label>
+            <input type="text" name="genres" value="" placeholder="Genres">
+        </div>
+        <div class="form-group">
+            <label for="status" class="text-light">Status</label>
+            <div class=" radio inline">
+            <input type="radio" id="radio-2" name="status" value="Reading">
+            <label for="radio-2" class="radio-label">Reading</label>
+            </div>
+            <div class=" radio inline">
+            <input type="radio" id="radio-3" name="status" value="Finished">
+            <label for="radio-3" class="radio-label">Finished</label>
+             </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+
+</form>
