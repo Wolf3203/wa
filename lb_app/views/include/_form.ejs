@@ -1,6 +1,4 @@
-
-
- <form  method = "POST" id="update_book">
+<form action="/api/books" method="POST" id="add_book">
     <div class="new_book">
         <div class="form-group">
             <label for="title" class="text-light">Title</label>
@@ -18,13 +16,13 @@
         <div class="form-group">
             <label for="status" class="text-light">Status</label>
             <div class=" radio inline">
-            <input type="radio" id="radio-2" name="status" value="Reading">
-            <label for="radio-2" class="radio-label">Reading</label>
+                <input type="radio" id="radio-2" name="status" value="Available">
+                <label for="radio-2" class="radio-label">Available</label>
             </div>
             <div class=" radio inline">
-            <input type="radio" id="radio-3" name="status" value="Finished">
-            <label for="radio-3" class="radio-label">Finished</label>
-             </div>
+                <input type="radio" id="radio-3" name="status" value="Not available">
+                <label for="radio-3" class="radio-label">Not available</label>
+            </div>
         </div>
     </div>
 

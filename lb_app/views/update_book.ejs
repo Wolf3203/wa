@@ -1,0 +1,81 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--include header-->
+
+    
+    <!-- /Main-->
+  
+
+
+        
+
+
+
+
+
+
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/"> <i class="far fa-hand-point-left"></i> All Books</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Update Book </h2>
+                <span class="text-light"> Use the form bellow to update </span>
+            </div>
+            <h3> 
+             
+              
+            </h3>
+            <!-- form handling-->
+
+
+            <form method="POST" id="update_book">
+                <div class="new_book">
+                    <div class="form-group">
+                        <label for="title" class="text-light">Title</label>
+                        <input type="hidden" name="id" value="">
+                        <input type="text" name="title" value="<%=  JSON.stringify(book) %>" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="Author" class="text-light">Author</label>
+                        <input type="text" name="author" value="" placeholder="Author">
+                    </div>
+                    <div class="form-group">
+                        <label for="Genres" class="text-light">Genres</label>
+                        <input type="text" name="genres" value="" placeholder="Genres">
+                    </div>
+                    <div class="form-group">
+                        <label for="status" class="text-light">Status</label>
+                        <div class=" radio inline">
+                            <input type="radio" id="radio-2" name="status" value="Available">
+                            <label for="radio-2" class="radio-label">Available</label>
+                        </div>
+                        <div class=" radio inline">
+                            <input type="radio" id="radio-3" name="status" value="Not available">
+                            <label for="radio-3" class="radio-label">Not available</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+
+            </form>
+
+            <!-- form handling-->
+
+
+        </div>
+    </main>
+
+
+
+ 
+
+<!--include footer-->
+<%-include('include/_footer')%>
+<!--include footer-->

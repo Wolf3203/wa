@@ -1,15 +1,17 @@
+<% for(var i=0; i < books.length; i++){%>
+
 <tr>
-    <td>1</td>
-    <td>12 rules</td>
-    <td>Jordan Peterson</td>
-    <td>Self Help</td>
-    <td>Reading</td>
+    <td><%= i+1%></td>
+    <td><%= books[i].title%></td>
+    <td><%= books[i].author%></td>
+    <td><%= books[i].genres%></td>
+    <td><%= books[i].status%></td>
     <td>
-        <a href="#" class = "btn border-shadow update">
+        <a href="/update-book?_id=<%= books[i]._id%>" class = "btn border-shadow update">
             <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
         </a>
         <a  class = "btn border-shadow delete">
             <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
         </a>
     </td>
-</tr>
+</tr> <%}%>
