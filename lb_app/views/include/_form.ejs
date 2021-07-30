@@ -1,4 +1,5 @@
-<form action="/api/books" method="POST" id="add_book">
+ <!-- form handling -->
+ <form action="/api/books" method="POST" id="add_book">
     <div class="new_book">
         <div class="form-group">
             <label for="title" class="text-light">Title</label>
@@ -6,28 +7,31 @@
             <input type="text" name="title" value="" placeholder="Title">
         </div>
         <div class="form-group">
-            <label for="Author" class="text-light">Author</label>
+            <label for="author" class="text-light">Author</label>
             <input type="text" name="author" value="" placeholder="Author">
         </div>
         <div class="form-group">
-            <label for="Genres" class="text-light">Genres</label>
-            <input type="text" name="genres" value="" placeholder="Genres">
+            <label for="publisher" class="text-light">Publisher</label>
+            <input type="text" name="publisher" value="" placeholder="Publisher">
         </div>
+        
+      
+
         <div class="form-group">
-            <label for="status" class="text-light">Status</label>
-            <div class=" radio inline">
-                <input type="radio" id="radio-2" name="status" value="Available">
+            <label for="gender" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="status" value="Available" >
                 <label for="radio-2" class="radio-label">Available</label>
             </div>
-            <div class=" radio inline">
-                <input type="radio" id="radio-3" name="status" value="Not available">
-                <label for="radio-3" class="radio-label">Not available</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="status" value="Not Available" >
+                <label for="radio-3" class="radio-label">Not Available</label>
             </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        <button type="submit" class="btn text-dark update">Save</button>
-    </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
 
+    </div>
 </form>
