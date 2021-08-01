@@ -13,7 +13,7 @@ $("#update_book").submit(function(event){
 
 
     var request = {
-        "url" : `http://localhost:5000/api/books/${ data.id }`,
+        "url" : `https://lbappms.herokuapp.com/api/books/${ data.id }`,
         "method" : "PUT",
         "data" : data
     }
@@ -28,7 +28,7 @@ if (window.location.pathname == "/") {
         var id = $(this).attr("data-id")
 
         var request = {
-            "url": `http://localhost:5000/api/books/${ id }`,
+            "url": `https://lbappms.herokuapp.com/api/books/${ id }`,
             "method": "DELETE"
         }
 
