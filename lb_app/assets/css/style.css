@@ -19,7 +19,7 @@ a{
 }
 
 .container{
-    max-width: 1024px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -154,7 +154,11 @@ table{
 
 }
 #update_book .form-group input[type="text"],
-#add_book .form-group input[type="text"]{
+#update_book .form-group input[type="number"],
+#update_book .form-group input[type="date"],
+#add_book .form-group input[type="text"],
+#add_book .form-group input[type="number"],
+#add_book .form-group input[type="date"]{
     width: 100%;
     padding: .6em 1em;
     margin: .5em 0;
@@ -228,7 +232,9 @@ margin: 1em 2em;
     color: var(--border);
 
 }
-
+table a {
+    cursor: pointer;
+}
 
 
 
